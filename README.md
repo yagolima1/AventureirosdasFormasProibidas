@@ -1,3 +1,5 @@
+<div> <img src="/PortaldasFormas/Imagens/Print.jpg" alt="Print-do-Portal"> </div>
+
 # Aventureiros das Formas Proibidas
 
 Este repositório contém meu projeto desenvolvido para o Desafio **Aventura Geométrica**. Nele, aplico conceitos de lógica de programação e cálculo de áreas de formas geométricas em um ambiente web, usando **HTML**, **CSS** e **JavaScript**.
