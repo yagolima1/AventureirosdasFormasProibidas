@@ -65,4 +65,3 @@ Após concluir o projeto, publiquei-o no **GitHub Pages**, permitindo que ele es
 
 ## Autor
 Este projeto foi desenvolvido como parte de um exercício prático para meus conhecimentos em programação e desenvolvimento web, proposto pelo Professor Gabriel.
----
