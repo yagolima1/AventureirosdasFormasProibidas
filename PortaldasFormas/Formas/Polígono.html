@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+
+    <link rel="icon" type="image/x-icon" href="./Imagens/logo.webp"> <!-- Ícone da aba do navegador -->
+
+    <link rel="stylesheet" href="../CSS/estilos.css"> <!-- Link para o arquivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão para melhorar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fonte Montserrat -->
+
+    <title>ShapeCraft: Polígono regular</title> <!-- Título da página -->
+</head>
+
+<body>
+    <header class="nav-header"> <!-- Cabeçalho da página -->
+        <div class="logo">
+            <img src="../Imagens/logo.webp" alt="Logo ShapeCraft" class="logo-site"> <!-- Logo do site -->
+            <strong><p class="texto-logo">ShapeCraft</p></strong> <!-- Nome do site -->
+        </div>
+
+        <nav> <!-- Menu de navegação -->
+            <ul class="lista"> <!-- Lista de itens -->
+                <li class="item-lista"><a href="../index.html" class="item-lista-link">Home</a></li> <!-- Link para a página inicial -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container-forma"> <!-- Seção principal para cálculo do polígono -->
+        <p class="nome-forma">Polígono regular</p> <!-- Nome da forma -->
+        <img src="../Imagens/polígono.png" alt="Imagem de vários polígonos" class="imagem-forma"> <!-- Imagem representativa do polígono -->
+        
+        <p class="descricao-forma">
+            Um polígono regular é uma figura geométrica com todos os lados e ângulos iguais. Dependendo do número de lados, pode ser um triângulo, quadrado, pentágono, hexágono e assim por diante.
+        </p> <!-- Descrição do polígono regular -->
+
+        <form class="calculo-forma" id="calculo-poligono"> <!-- Formulário para cálculo do polígono -->
+            <div>
+                <label for="selecao-formas" class="valor-forma">Escolha o tipo de polígono:</label> <!-- Label para o seletor -->
+                <select name="select" id="selecao-formas"> <!-- Menu suspenso para seleção do polígono -->
+                    <option value="hexagono">Hexágono</option> <!-- Opção para hexágono -->
+                    <option value="octogono" selected>Octógono</option> <!-- Opção para octógono, selecionada por padrão -->
+                    <option value="triangulo">Triângulo Equilátero</option> <!-- Opção para triângulo equilátero -->
+                </select>
+            </div>
+
+            <div>
+                <label for="lado-poligono-input" class="valor-forma">Digite o valor do lado:</label> <!-- Label para o campo de entrada -->
+                <input type="text" class="forma-input" id="lado-poligono-input"> <!-- Campo de entrada para o valor do lado -->
+            </div>
+            
+            <input type="submit" value="Calcular" class="calcular-forma"> <!-- Botão para calcular a área -->
+        </form>
+
+        <p class="resultado" id="resultado-poligono"></p> <!-- Parágrafo para exibir o resultado -->
+    </section>
+</body>
+
+<script src="../JavaScript/Polígono.js"></script> <!-- Script JavaScript para funcionalidade do formulário -->
+
+</html>

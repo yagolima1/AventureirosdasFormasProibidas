@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+
+    <link rel="icon" type="image/x-icon" href="./Imagens/logo.webp"> <!-- Ícone da aba do navegador -->
+
+    <link rel="stylesheet" href="../CSS/estilos.css"> <!-- Link para o arquivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão para melhorar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fonte Montserrat -->
+
+    <title>ShapeCraft: Cubóide</title> <!-- Título da página -->
+</head>
+
+<body>
+    <header class="nav-header"> <!-- Cabeçalho da página -->
+        <div class="logo">
+            <img src="../Imagens/logo.webp" alt="Logo ShapeCraft" class="logo-site"> <!-- Logo do site -->
+            <strong><p class="texto-logo">ShapeCraft</p></strong> <!-- Nome do site -->
+        </div>
+
+        <nav> <!-- Menu de navegação -->
+            <ul class="lista"> <!-- Lista de itens -->
+                <li class="item-lista"><a href="../index.html" class="item-lista-link">Home</a></li> <!-- Link para a página inicial -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container-forma"> <!-- Seção principal para cálculo do cubóide -->
+        <p class="nome-forma">Cubóide</p> <!-- Nome da forma -->
+        <img src="../Imagens/cubóide.png" alt="Imagem de um cubóide" class="imagem-forma"> <!-- Imagem representativa do cubóide -->
+        
+        <p class="descricao-forma">
+            O cubóide é uma forma tridimensional composta por seis faces retangulares, onde as arestas opostas são de igual comprimento. Ele se assemelha a uma caixa ou paralelepípedo, sendo encontrado em diversas estruturas cotidianas, como prédios, contêineres e móveis.
+        </p> <!-- Descrição do cubóide -->
+
+        <form class="calculo-forma" id="calculo-cuboide"> <!-- Formulário para cálculo do cubóide -->
+            <div>
+                <label for="comprimento-cuboide-input" class="valor-forma">Digite o valor do comprimento:</label> <!-- Label para o campo de entrada do comprimento -->
+                <input type="text" class="forma-input" id="comprimento-cuboide-input"> <!-- Campo de entrada para o comprimento -->
+            </div>
+
+            <div>
+                <label for="profundidade-cuboide-input" class="valor-forma">Digite o valor da profundidade:</label> <!-- Label para o campo de entrada da profundidade -->
+                <input type="text" class="forma-input" id="profundidade-cuboide-input"> <!-- Campo de entrada para a profundidade -->
+            </div>
+
+            <div>
+                <label for="altura-cuboide-input" class="valor-forma">Digite o valor da altura:</label> <!-- Label para o campo de entrada da altura -->
+                <input type="text" class="forma-input" id="altura-cuboide-input"> <!-- Campo de entrada para a altura -->
+            </div>
+
+            <input type="submit" value="Calcular" class="calcular-forma"> <!-- Botão para calcular o volume do cubóide -->
+        </form>
+
+        <p class="resultado" id="resultado-cuboide"></p> <!-- Parágrafo para exibir o resultado -->
+    </section>
+</body>
+
+<script src="../JavaScript/Cubóide.js"></script> <!-- Script JavaScript para funcionalidade do formulário -->
+
+</html>

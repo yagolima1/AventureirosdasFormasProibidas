@@ -1,0 +1,219 @@
+body {
+    background-color: #191414; /* Cor de fundo principal */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    font-family: 'Montserrat', sans-serif; /* Define a fonte principal */
+    color: #FFF; /* Texto branco por padrão */
+}
+
+.nav-header {
+    background-color: #1DB954; /* Cor de fundo do cabeçalho */
+    display: flex; /* Usa flexbox para organizar o layout */
+    justify-content: space-between; /* Espaço entre os itens do cabeçalho */
+    padding: 15px 40px; /* Espaçamento interno do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; /* Sombra para o cabeçalho */
+}
+
+.logo-site {
+    width: 80px; /* Largura da logo */
+    height: 80px; /* Altura da logo */
+}
+
+.logo {
+    display: flex; /* Usando flexbox para a logo e texto */
+    align-items: center; /* Alinha a logo e texto verticalmente ao centro */
+    gap: 15px; /* Espaçamento entre logo e texto */
+}
+
+.texto-logo {
+    font-size: 30px; /* Tamanho da fonte do texto da logo */
+    font-weight: 700; /* Peso da fonte da logo */
+    color: #FFF; /* Cor do texto da logo */
+}
+
+.lista {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Usa flexbox para o menu */
+    gap: 30px; /* Espaçamento entre itens da lista */
+}
+
+.item-lista-link {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: 650; /* Peso da fonte dos links */
+    color: #FFF; /* Cor do texto dos links */
+    font-size: 20px; /* Tamanho da fonte dos links */
+    transition: color 0.3s; /* Transição suave para a cor ao passar o mouse */
+}
+
+.item-lista-link:hover {
+    color: #FF9900; /* Cor dos links ao passar o mouse */
+}
+
+.titulo {
+    text-align: center; /* Centraliza o título */
+    margin: 40px 0; /* Margens superior e inferior */
+    font-size: 28px; /* Tamanho da fonte do título */
+    color: #FFF; /* Cor do título */
+}
+
+.formas {
+    display: grid; /* Usa grid para layout das formas */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaçamento entre as formas */
+    padding: 20px; /* Padding da seção de formas */
+}
+
+.forma {
+    background-color: #1B1B1B; /* Cor de fundo das formas */
+    border: 1px solid #CCC; /* Borda clara */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno das formas */
+    text-align: center; /* Centraliza o texto dentro da forma */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* Sombra das formas */
+    transition: transform 0.2s; /* Transição suave ao transformar */
+}
+
+.forma:hover {
+    transform: scale(1.05); /* Aumenta levemente a forma ao passar o mouse */
+}
+
+.forma img {
+    width: 100px; /* Largura da imagem da forma */
+    height: 100px; /* Altura da imagem da forma */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.titulo-forma {
+    font-size: 20px; /* Tamanho da fonte dos títulos das formas */
+    font-weight: 600; /* Peso da fonte dos títulos das formas */
+    color: #FFF; /* Cor dos títulos das formas */
+}
+
+.texto-forma {
+    font-size: 14px; /* Tamanho da fonte da descrição das formas */
+    color: #FFF; /* Cor do texto da descrição */
+    margin: 10px 0; /* Margens acima e abaixo do texto */
+}
+
+.botao-forma {
+    text-decoration: none; /* Remove o sublinhado do botão */
+    background-color: #1DB954; /* Cor de fundo do botão */
+    color: #FFF; /* Cor do texto do botão */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    transition: background-color 0.3s; /* Transição suave da cor de fundo */
+}
+
+.botao-forma:hover {
+    background-color: #16A34A; /* Cor ao passar o mouse no botão */
+}
+
+.container-forma {
+    margin-top: 30px; /* Margem superior da seção de forma */
+    display: flex; /* Usando flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha os itens na coluna */
+    padding: 50px; /* Padding da seção */
+}
+
+.imagem-forma {
+    width: 30%; /* Largura da imagem da forma */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
+
+.nome-forma {
+    color: white; /* Cor do nome da forma */
+    font-weight: 700; /* Peso da fonte do nome da forma */
+    font-size: 30px; /* Tamanho da fonte do nome da forma */
+    margin-bottom: 20px; /* Margem abaixo do nome da forma */
+}
+
+.descricao-forma {
+    font-weight: 500; /* Peso da fonte da descrição */
+    width: 30%; /* Largura da descrição */
+    color: white; /* Cor da descrição */
+    margin-bottom: 30px; /* Margem abaixo da descrição */
+}
+
+.calculo-forma {
+    display: flex; /* Usando flexbox para o formulário de cálculo */
+    align-items: center; /* Alinha itens verticalmente ao centro */
+    gap: 10px; /* Espaçamento entre os itens do formulário */
+    margin: 20px 70px 0; /* Margem superior e horizontal do formulário */
+}
+
+.valor-forma {
+    font-weight: 600; /* Peso da fonte do label */
+    color: white; /* Cor do texto do label */
+    font-size: 20px; /* Tamanho da fonte do label */
+}
+
+.forma-input {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; /* Sombra do input */
+    border: 0 none; /* Remove borda do input */
+    outline: 0; /* Remove contorno do input */
+    background-color: #FFF; /* Cor de fundo dos inputs */
+    padding: 9px; /* Espaçamento interno do input */
+    border-radius: 3px; /* Bordas arredondadas do input */
+    width: 50px; /* Largura do input */
+}
+
+.calcular-forma {
+    border: none; /* Remove borda do botão de calcular */
+    background-color: #1DB954; /* Cor de fundo do botão */
+    color: #FFF; /* Cor do texto do botão */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; /* Sombra do botão */
+    font-family: 'Montserrat', sans-serif; /* Fonte do botão */
+    font-weight: 600; /* Peso da fonte do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 3px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para mão ao passar sobre o botão */
+    font-size: 20px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+.calcular-forma:hover {
+    background-color: #16A34A; /* Cor do botão ao passar o mouse */
+}
+
+.resultado {
+    font-size: 24px; /* Tamanho da fonte da mensagem de resultado */
+    color: #FF9900; /* Cor da mensagem de resultado */
+    font-weight: 500; /* Peso da fonte da mensagem de resultado */
+    margin-bottom: 15px; /* Margem abaixo da mensagem */
+}
+
+
+#calculo-cuboide, #calculo-retangulo, #calculo-trapezoide, #calculo-romboedro, #calculo-poligono {
+    display: flex; /* Usa flexbox para disposição dos itens */
+    flex-direction: column; /* Alinha os itens na coluna */
+}
+
+#selecao-formas {
+    border: none; /* Remove borda do seletor de formas */
+    width: 150px; /* Largura do seletor de formas */
+    padding: 10px 10px 10px 3px; /* Espaçamento interno do seletor */
+    border-radius: 3px; /* Bordas arredondadas do seletor */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /* Sombra do seletor */
+    font-family: 'Montserrat', sans-serif; /* Fonte do seletor */
+    font-weight: 600; /* Peso da fonte do seletor */
+    color: #3F5711; /* Cor do texto do seletor */
+    background-color: #FFF; /* Cor de fundo do seletor */
+}
+
+.texto-forma {
+    margin-bottom: 15px; /* Margem abaixo do texto da forma */
+}
+
+.botao-forma {
+    padding: 10px 15px; /* Adiciona espaçamento interno ao botão */
+    border: none; /* Remove borda do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    background-color: #1db954; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove sublinhado do botão */
+    font-weight: bold; /* Peso da fonte do botão */
+    display: inline-block; /* Garante que o botão se comporte como um bloco */
+}

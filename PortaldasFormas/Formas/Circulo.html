@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a visualização para dispositivos móveis -->
+
+    <link rel="icon" type="image/x-icon" href="./Imagens/logo.webp"> <!-- Ícone da aba do navegador -->
+
+    <link rel="stylesheet" href="../CSS/estilos.css"> <!-- Link para o arquivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão para melhorar o carregamento de fontes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fonte Montserrat -->
+
+    <title>ShapeCraft: Círculo</title> <!-- Título da página -->
+</head>
+
+<body>
+    <header class="nav-header"> <!-- Cabeçalho da página -->
+        <div class="logo">
+            <img src="../Imagens/logo.webp" alt="Logo ShapeCraft" class="logo-site"> <!-- Logo do site -->
+            <strong><p class="texto-logo">ShapeCraft</p></strong> <!-- Nome do site -->
+        </div>
+
+        <nav> <!-- Menu de navegação -->
+            <ul class="lista"> <!-- Lista de itens -->
+                <li class="item-lista"><a href="../index.html" class="item-lista-link">Home</a></li> <!-- Link para a página inicial -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container-forma"> <!-- Seção principal para cálculo do círculo -->
+        <p class="nome-forma">Círculo</p> <!-- Nome da forma -->
+        <img src="../Imagens/círculo.webp" alt="Imagem de um círculo" class="imagem-forma"> <!-- Imagem representativa do círculo -->
+        
+        <p class="descricao-forma">
+            O círculo é uma forma geométrica perfeitamente redonda, definida por todos os pontos à mesma distância do seu centro. 
+            Ele é amplamente encontrado na natureza e em objetos cotidianos, como rodas, moedas e relógios. 
+            Para calcular a área de um círculo, usamos o valor de seu raio.
+        </p> <!-- Descrição do círculo -->
+
+        <form class="calculo-forma" id="calculo-circulo"> <!-- Formulário para cálculo do círculo -->
+            <label for="raio-circulo-input" class="valor-forma">Digite o valor do raio:</label> <!-- Label para o campo de entrada do raio -->
+            <input type="text" class="forma-input" id="raio-circulo-input"> <!-- Campo de entrada para o raio -->
+            <input type="submit" value="Calcular" class="calcular-forma"> <!-- Botão para calcular a área do círculo -->
+        </form>
+
+        <p class="resultado" id="resultado-circulo"></p> <!-- Parágrafo para exibir o resultado -->
+    </section>
+</body>
+
+<script src="../JavaScript/Círculo.js"></script> <!-- Script JavaScript para funcionalidade do formulário -->
+
+</html>

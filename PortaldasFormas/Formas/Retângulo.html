@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define o ícone da aba do navegador -->
+    <link rel="icon" type="image/x-icon" href="./Imagens/logo.webp">
+
+    <!-- Link para o arquivo CSS que contém os estilos da página -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+
+    <!-- Preconexões para otimizar o carregamento das fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Título da página que será exibido na aba do navegador -->
+    <title>ShapeCraft: Retângulo</title>
+
+</head>
+
+<body>
+
+    <header class="nav-header">
+
+        <!-- Seção do logo -->
+        <div class="logo">
+            <img src="../Imagens/logo.webp" alt="Logo ShapeCraft" class="logo-site">
+            <strong><p class="texto-logo">ShapeCraft</p></strong>
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="lista">
+                <li class="item-lista"><a href="../index.html" class="item-lista-link">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="container-forma">
+
+        <!-- Nome da forma -->
+        <p class="nome-forma">Retângulo</p>
+
+        <!-- Imagem representativa do retângulo -->
+        <img src="../Imagens/retângulo.webp" alt="Imagem de um retângulo" class="imagem-forma">
+
+        <!-- Descrição do retângulo -->
+        <p class="descricao-forma">
+            O retângulo é uma forma geométrica de quatro lados com dois pares de lados opostos iguais e todos os ângulos retos (90 graus). É uma figura muito comum, vista em objetos como portas, livros e telas. O cálculo da sua área é simples: basta multiplicar a largura pela altura.
+        </p>
+
+        <!-- Formulário para cálculo da área do retângulo -->
+        <form class="calculo-forma" id="calculo-retangulo">
+
+            <div>
+                <!-- Campo para inserir o valor da largura -->
+                <label for="valorLado" class="valor-forma">Digite o valor da largura:</label>
+                <input type="text" class="forma-input" id="largura-retangulo-input">
+            </div>
+            
+            <div>
+                <!-- Campo para inserir o valor da altura -->
+                <label for="valorLado" class="valor-forma">Digite o valor da altura:</label>
+                <input type="text" class="forma-input" id="altura-retangulo-input">
+            </div>
+
+            <!-- Botão para calcular a área -->
+            <input type="submit" value="Calcular" class="calcular-forma">
+
+        </form>
+
+        <!-- Elemento para exibir o resultado do cálculo -->
+        <p class="resultado" id="resultado-retangulo"></p>
+
+    </section>
+
+</body>
+
+<!-- Link para o arquivo JavaScript que contém a lógica de cálculo da área -->
+<script src="../JavaScript/Retângulo.js"></script>
+
+</html>
